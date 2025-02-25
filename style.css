@@ -1,0 +1,84 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 100px;
+  color: #ffffff;
+}
+body {
+  background-color: #f4a5ae;
+}
+
+.btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  &:hover {
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    background-color: grey;
+  }
+}
+
+.cat1 {
+  background-image: url(./images/cat1.jpeg);
+  background-size: cover;
+}
+.cat2 {
+  background-image: url(./images/cat2.jpeg);
+  background-size: cover;
+}
+.cat3 {
+  background-image: url(./images/cat3.jpeg);
+  background-size: cover;
+}
+.cat4 {
+  background-image: url(./images/cat4.jpeg);
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  width: 20%;
+  gap: 10px;
+  margin-left: 35%;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.loser {
+  border-radius: 5px;
+  height: 500px;
+  border: 5px solid black;
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  display: grid;
+  grid-template: 5fr 1fr/ 1fr;
+  opacity: 90%;
+  width: 800px;
+  background-image: url(./images/loser.jpeg);
+  background-size: cover;
+  p {
+    color: rgb(8, 5, 6);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
